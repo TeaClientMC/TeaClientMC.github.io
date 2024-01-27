@@ -1,0 +1,46 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: Issue with GitHub Pages"
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+ - octocat
+body:
+ - type: input
+   id: title
+   attributes:
+     label: Title
+     placeholder: Issue with GitHub Pages
+ - type: textarea
+   id: description
+   attributes:
+     label: Description
+     placeholder: Please describe the issue you're experiencing in detail.
+ - type: textarea
+   id: steps_to_reproduce
+   attributes:
+     label: Steps to Reproduce
+     placeholder: Provide a step-by-step guide on how to reproduce the issue.
+ - type: textarea
+   id: expected_result
+   attributes:
+     label: Expected Result
+     placeholder: Describe what you expect to happen.
+ - type: textarea
+   id: actual_result
+   attributes:
+     label: Actual Result
+     placeholder: Describe what actually happens. Include any error messages or screenshots if applicable.
+ - type: dropdown
+   id: browser
+   attributes:
+     label: Browser
+     options:
+       - Chrome
+       - Firefox
+       - Safari
+ - type: textarea
+   id: additional_context
+   attributes:
+     label: Additional Context
+     placeholder: Add any other context about the problem here.
